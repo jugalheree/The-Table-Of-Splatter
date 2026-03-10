@@ -237,31 +237,31 @@ const FontLoader = () => (
 );
 
 // ── Unsplash image URLs ───────────────────────────────────────
-const IMAGES = {
-  hero:     "./IMAGES/INTERIOR7.jpg",
-  about:    "./IMAGES/ABOUT.jpg",
+const images = {
+  hero:     "./images/INTERIOR7.jpg",
+  about:    "./images/ABOUT.jpg",
   pizza:    "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80",
   pasta:    "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&q=80",
   burger:   "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
   mocktail: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80",
   shake:    "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80",
   dessert:  "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80",
-  g1:       "./IMAGES/INTERIOR.jpg",
-  g2:       "./IMAGES/INTERIOR2.jpg",
-  g3:       "./IMAGES/INTERIOR3.jpg",
-  g4:       "./IMAGES/INTERIOR4.jpeg",
-  g5:       "./IMAGES/INTERIOR5.jpg",
-  g6:       "./IMAGES/INTERIOR6.jpg",
+  g1:       "./images/INTERIOR.jpg",
+  g2:       "./images/INTERIOR2.jpg",
+  g3:       "./images/INTERIOR3.jpg",
+  g4:       "./images/INTERIOR4.jpeg",
+  g5:       "./images/INTERIOR5.jpg",
+  g6:       "./images/INTERIOR6.jpg",
 };
 
 // ── Dishes data ───────────────────────────────────────────────
 const DISHES = [
-  { name: "Artisan Pizza",     desc: "Wood-fired crust with fresh mozzarella, basil & our house tomato sauce.",         price: "₹349",  img: IMAGES.pizza    },
-  { name: "Creamy Pasta",      desc: "Al dente penne in a rich truffle-cream sauce with sun-dried tomatoes.",           price: "₹299",  img: IMAGES.pasta    },
-  { name: "Signature Burger",  desc: "Double smash patty, cheddar, caramelised onion & our secret smoky sauce.",       price: "₹269",  img: IMAGES.burger   },
-  { name: "Fresh Mocktail",    desc: "Seasonal fruits blended with mint, ginger & sparkling water. Zero compromise.",   price: "₹149",  img: IMAGES.mocktail },
-  { name: "Thick Shake",       desc: "Hand-churned ice cream shakes in chocolate, strawberry & caramel hazelnut.",     price: "₹179",  img: IMAGES.shake    },
-  { name: "Sweet Endings",     desc: "Warm brownie, Belgian waffle or classic tiramisu — pick your indulgence.",        price: "₹199",  img: IMAGES.dessert  },
+  { name: "Artisan Pizza",     desc: "Wood-fired crust with fresh mozzarella, basil & our house tomato sauce.",         price: "₹349",  img: images.pizza    },
+  { name: "Creamy Pasta",      desc: "Al dente penne in a rich truffle-cream sauce with sun-dried tomatoes.",           price: "₹299",  img: images.pasta    },
+  { name: "Signature Burger",  desc: "Double smash patty, cheddar, caramelised onion & our secret smoky sauce.",       price: "₹269",  img: images.burger   },
+  { name: "Fresh Mocktail",    desc: "Seasonal fruits blended with mint, ginger & sparkling water. Zero compromise.",   price: "₹149",  img: images.mocktail },
+  { name: "Thick Shake",       desc: "Hand-churned ice cream shakes in chocolate, strawberry & caramel hazelnut.",     price: "₹179",  img: images.shake    },
+  { name: "Sweet Endings",     desc: "Warm brownie, Belgian waffle or classic tiramisu — pick your indulgence.",        price: "₹199",  img: images.dessert  },
 ];
 
 // ── Experiences ───────────────────────────────────────────────
@@ -399,7 +399,7 @@ function Hero() {
       {/* Background image */}
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: `url(${IMAGES.hero})`,
+        backgroundImage: `url(${images.hero})`,
         backgroundSize: "cover", backgroundPosition: "center",
         opacity: 0.18
       }} />
@@ -494,7 +494,7 @@ function About() {
         {/* Image */}
         <div className="fade-up" style={{ position: "relative" }}>
           <img
-            src={IMAGES.about}
+            src={images.about}
             alt="The Table at Splatter interior"
             style={{ width: "100%", height: 500, objectFit: "cover", borderRadius: 24, display: "block" }}
           />
@@ -669,7 +669,7 @@ function Experience() {
 
 // ── Gallery ───────────────────────────────────────────────────
 function Gallery() {
-  const photos = [IMAGES.g1, IMAGES.g2, IMAGES.g3, IMAGES.g4, IMAGES.g5, IMAGES.g6];
+  const photos = [images.g1, images.g2, images.g3, images.g4, images.g5, images.g6];
   return (
     <section id="gallery" style={{ background: "var(--parchment)", padding: "100px 24px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -788,7 +788,7 @@ function Reservation() {
     }}>
       <div style={{
         position: "absolute", inset: 0,
-        backgroundImage: `url(${IMAGES.g2})`,
+        backgroundImage: `url(${images.g2})`,
         backgroundSize: "cover", backgroundPosition: "center",
         opacity: 0.1
       }} />
