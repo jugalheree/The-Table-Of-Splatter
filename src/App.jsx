@@ -954,7 +954,7 @@ function Contact() {
             >
               📞 Call Restaurant
             </a>
-            <a href="https://instagram.com/thetableatsplatter" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/thetableatsplatter_?igsh=MWg5aTExc3IybXExbw==" target="_blank" rel="noopener noreferrer"
               style={{ background: "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)", color: "white", padding: "14px 20px", borderRadius: 14, fontWeight: 600, fontSize: 14, textDecoration: "none", display: "flex", alignItems: "center", gap: 10, transition: "transform 0.2s, box-shadow 0.2s" }}
               onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = "0 10px 28px rgba(220,39,67,0.3)"; }}
               onMouseLeave={e => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}
@@ -1051,7 +1051,7 @@ function Footer({ onReserveClick }) {
             </p>
             <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
               {[
-                { href: "https://instagram.com/thetableatsplatter", icon: "📸", label: "Instagram" },
+                { href: "https://www.instagram.com/thetableatsplatter_?igsh=MWg5aTExc3IybXExbw==", icon: "📸", label: "Instagram" },
                 { href: "https://wa.me/917507011992", icon: "💬", label: "WhatsApp" },
                 { href: "https://maps.google.com/?q=The+Table+at+Splatter+Vadodara", icon: "🗺️", label: "Maps" },
               ].map((s) => (
