@@ -899,8 +899,8 @@ function Contact() {
             {
               icon: "📸",
               label: "Instagram",
-              value: "@thetableatsplatter",
-              link: "https://instagram.com/thetableatsplatter",
+              value: "@thetableatsplatter_",
+              link: "https://www.instagram.com/thetableatsplatter_?igsh=MWg5aTExc3IybXExbw==",
               linkText: "Follow Us →"
             },
           ].map((item) => (
